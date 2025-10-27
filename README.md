@@ -126,6 +126,3 @@ npm start
 * 🪄 Typing indicators & message timestamps
 * 🧱 Room creation / management via UI
 * 📱 Improved responsive design
-
----# chatRoom
-# chatRoom
