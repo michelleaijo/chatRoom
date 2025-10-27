@@ -1,0 +1,10 @@
+<div class="room-list">
+  <h3>Rooms</h3>
+  <ul>
+    <li *ngFor="let room of rooms"
+        (click)="selectRoom(room)"
+        [class.active]="room === selectedRoom">
+      {{ room }}
+    </li>
+  </ul>
+</div>

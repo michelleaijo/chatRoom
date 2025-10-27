@@ -1,0 +1,83 @@
+/* Landing page component filling the viewport */
+.landing-container {     
+  display: flex;
+  flex-direction: column;
+  justify-content: center;   
+  align-items: center;       
+  font-family: 'Patrick Hand', cursive;
+  position: relative;
+  padding: 20px;
+
+  /* Heading styled like crayon scribble */
+  h2 {
+    font-family: 'Reenie Beanie', cursive;
+    font-size: 5rem;
+    color: #f05e5e;
+    line-height: 1.2;
+    text-align: center;
+    letter-spacing: 1px;
+    transform: rotate(-1deg);
+    position: relative;
+    margin-bottom: 30px;
+
+    /* Crayon sprawl effect */
+    text-shadow: 
+      1px 1px #f07f7f, 
+      -1px -1px #f07f7f, 
+      1px -1px #f07f7f, 
+      -1px 1px #f07f7f;
+  }
+
+  /* Input field */
+  input[type="text"] {
+    width: 320px;
+    padding: 14px;
+    font-family: 'Reenie Beanie', cursive;
+    font-size: 1.2rem;
+    margin-bottom: 25px;
+    border: 2px solid #e0e0e0;
+    border-radius: 8px;
+    outline: none;
+    background: rgba(255, 255, 255, 0.85);
+    box-shadow: inset 0 2px 4px rgba(0,0,0,0.05), 0 2px 6px rgba(0,0,0,0.05);
+    transition: all 0.3s ease;
+
+    &:focus {
+      border-color: #f05e5e;
+      box-shadow: inset 0 2px 6px rgba(0,0,0,0.1), 0 0 8px rgba(240,94,94,0.3);
+    }
+
+    &::placeholder {
+      font-style: italic;
+      color: #999;
+      font-size: 2rem;
+    }
+  }
+
+  /* Button */
+  button {
+    width: 320px;
+    padding: 14px;
+    font-family: 'Reenie Beanie', cursive;
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    background: linear-gradient(145deg, #f05e5e, #e04a4a);
+    transition: all 0.25s ease;
+    box-shadow: 0 5px 15px rgba(240,94,94,0.25);
+
+    &:hover {
+      background: linear-gradient(145deg, #e04a4a, #c63c3c);
+      transform: translateY(-2px);
+      box-shadow: 0 8px 20px rgba(240,94,94,0.35);
+    }
+
+    &:active {
+      transform: translateY(1px);
+      box-shadow: 0 3px 10px rgba(240,94,94,0.2);
+    }
+  }
+}

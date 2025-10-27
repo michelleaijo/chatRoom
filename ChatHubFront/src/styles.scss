@@ -1,0 +1,16 @@
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  font-family: 'Patrick Hand', cursive;
+  background-color: #fffbe6;
+
+  /* Horizontal notebook lines + vertical blue margin */
+  background-image: 
+    linear-gradient(to bottom, #f58787 1px, transparent 2px), /* horizontal lines */
+    linear-gradient(to right, #4a90e2 2px, transparent 0);       /* vertical line */
+
+  background-size: 100% 30px, 2px 100%;      /* horizontal every 30px, vertical line 2px thick */
+  background-repeat: repeat, no-repeat;      /* horizontal repeats, vertical only once */
+  background-position: 0 0, 5% 0;           /* horizontal at top, vertical at 10% from left */
+}
